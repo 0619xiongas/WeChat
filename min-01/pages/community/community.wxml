@@ -1,0 +1,77 @@
+<!-- 
+    1，text标签相当于web中的span标签 不会换行
+    2，view标签相当于web中的div标签，会换行。
+ -->
+
+<text>1111</text>
+<text>--22222</text>
+<view>11</view>
+<view>2222</view>
+
+<view>
+    {{msg}}
+    {{num}}
+    是否是男生:{{isGirl}}
+</view>
+<view>
+    {{Person.age}}
+</view>
+
+<view data-num = "{{num}}">
+    自定义属性
+</view>
+
+<checkbox checked="{{isChecked}}">
+    
+</checkbox>
+
+<!-- 
+    block 
+    占位符的标签
+    写代码的时候，可以看到这标签存在
+    页面渲染的时候会移除掉
+-->
+<!--  条件渲染 if
+      wx:if"{{true/false}}
+      if else if  else
+
+      hidden
+      1,在标签上直接加入属性hidden
+      2 hidden = 表达式
+      hidden 不要跟display一起使用
+-->
+
+<view>
+    <view>
+    条件渲染
+    </view>
+    <view wx:if ="{{true}}">
+    显示
+    </view>
+    <view wx:if = "{{false}}">
+        隐藏
+    </view>
+
+    <view wx:if="{{false}}">
+        1
+    </view>
+      <view wx:elif = "{{false}}">
+          2
+      </view>
+      <view wx:else = "{{true}}">
+          3
+      </view>
+      <view>
+          ----------------
+      </view>
+      <view hidden>
+          hidden
+      </view>
+      <view hidden = "{{false}}">
+          hidden2
+      </view>
+        
+        
+</view>
+  
+  

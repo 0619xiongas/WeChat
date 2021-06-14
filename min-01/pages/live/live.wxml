@@ -1,0 +1,25 @@
+<!-- 
+  绑定一个input事件
+  关键字 bindinput
+  获取输入框的值
+    通过事件源对象来获取
+    e.datail.value来获取
+  把输入框的值赋给view中
+  this.setData({
+    num: e.detail.valuew
+  })
+
+  添加点击事件
+     bindtap
+     无法在事件中直接传参数
+     通过自定义属性来传参数
+     事件源中获取自定义属性
+ -->
+
+<input type = "text" bindinput = "handleInput"/>
+<button bindtap = "handletap" data-operation="{{1}}">+</button>
+<button bindtap = "handletap" data-operation="{{-1}}">-</button>
+<view>
+  {{num}}
+</view>
+  

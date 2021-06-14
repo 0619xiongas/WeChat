@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/community/community",
+    "pages/note/note",
+    "pages/live/live",
+    "pages/person/person",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundColor": "#ffff00"
+  },
+  "tabBar": {
+    "color": "#110000",
+    "selectedColor": "#FF0000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "Icon/home_unpressed.png",
+      "selectedIconPath": "Icon/home_pressed.png"
+    },
+    {
+      "pagePath": "pages/community/community",
+      "text": "社区",
+      "iconPath": "Icon/community_unpressed.png",
+      "selectedIconPath": "Icon/community_pressed.png"
+    },
+    {
+      "pagePath": "pages/note/note",
+      "text": "笔记",
+      "iconPath": "Icon/note_unpressed.png",
+      "selectedIconPath": "Icon/note_pressed.png"
+    },
+    {
+      "pagePath": "pages/live/live",
+      "text": "直播",
+      "iconPath": "Icon/live_unpressed.png",
+      "selectedIconPath": "Icon/live_pressed.png"
+    },
+    {
+      "pagePath": "pages/person/person",
+      "text": "个人",
+      "iconPath": "Icon/person_unpressed.png",
+      "selectedIconPath": "Icon/person_pressed.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
